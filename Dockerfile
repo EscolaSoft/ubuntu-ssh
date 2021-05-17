@@ -1,16 +1,8 @@
-FROM ubuntu:bionic
+FROM python:3.8.3
 MAINTAINER Gutar "<admin@escolasoft.com>"
 ENV DEBIAN_FRONTEND=noninteractive
 
-
-# Install ssh
-RUN apt-get update -y && apt-get install -y \
-  curl \
-  git-core \
-  gzip \
-  openssh-client \
-  unzip \
-  zip \
-  --no-install-recommends && \
-  apt-get autoremove -y && \
-  rm -rf /var/lib/apt/lists/*
+RUN apt-get update \
+	&& apt-get install -y jq \
+	&& apt-get clean \
+	&& pip install awscli \
