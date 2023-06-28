@@ -1,4 +1,3 @@
-MAINTAINER Gutar "<admin@escolasoft.com>"
 FROM ubuntu
 RUN apt update && apt-get install -y apt-transport-https ca-certificates curl unzip && \
   apt-get -y autoremove && \
