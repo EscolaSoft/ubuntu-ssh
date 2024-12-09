@@ -1,7 +1,6 @@
-FROM ubuntu
+FROM ubuntu:latest
 MAINTAINER Gutar "<admin@escolasoft.com>"
 ENV DEBIAN_FRONTEND=noninteractive
-
 
 # Install ssh
 RUN apt-get update -y && apt-get install -y \
