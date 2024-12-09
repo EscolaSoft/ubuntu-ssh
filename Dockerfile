@@ -1,4 +1,4 @@
-FROM ubuntu:bionic
+FROM ubuntu
 MAINTAINER Gutar "<admin@escolasoft.com>"
 ENV DEBIAN_FRONTEND=noninteractive
 
